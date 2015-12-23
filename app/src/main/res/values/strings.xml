@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="initial_tip_value">15 %</string>
+    <string name="initial_billSplit_value">1</string>
+
+</resources>

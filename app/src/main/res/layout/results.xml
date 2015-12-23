@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp"
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/beforeTipContainer"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Total before tip: "
+            android:layout_marginTop="75sp"
+            android:layout_marginBottom="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/tipContainer"
+        android:layout_below="@+id/beforeTipContainer"
+        >
+
+        <TextView
+            android:id="@+id/lblTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Your tip is: "
+            android:layout_marginBottom="20sp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/GTContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tipContainer">
+
+        <TextView
+            android:id="@+id/lblGrandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Grand Total: "
+            android:layout_marginBottom="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BillSplitContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/GTContainer">
+
+        <TextView
+            android:id="@+id/lblSplitBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Bill Split Between: "
+            android:layout_marginBottom="20sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/BillSplitContainer"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/lblTotalOwed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="You Owe: "
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="finish"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+
+
+</RelativeLayout>
